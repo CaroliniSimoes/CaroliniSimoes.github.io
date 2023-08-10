@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- ---------------------------------------------Básico------------------------------------------------ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6875bff425.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!--  fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+
+    <title> Portfolio Carolini Simões </title>
+</head>
+
+<body>
+    <!-- ---------------------------------------------Menu------------------------------------------------ -->
+    <div class="menu">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#face"> Início </a></li>
+                <li><a href="#about"> Sobre Mim </a></li>
+                <li><a href="#education"> Formação </a></li>
+                <li><a href="#skills"> Skills </a></li>
+                <li><a href="#experience"> Experiência </a></li>
+                <li><a href="#portfolio"> Portfólio </a></li>
+                <li><a href="#contact"> Contato </a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- ---------------------------------------------Rosto------------------------------------------------ -->
+    <section class="container face" id="face">
+        <!--  fotinha inicial :D -->
+        <div>
+            <img src="img/welcome.gif" alt="oin" class="image__oin">
+        </div>
+
+        <!--  textinhu inicial :3 -->
+        <div class="text__welcome">
+            <p> Opa, eu sou a </p>
+            <h1> Carolini Simões </h1>
+            <p> bão? </p>
+
+            <!--  botõezinhus 8) -->
+            <div class="btn">
+                <a href="curriculo.com" class="btn_primary"> Currículo</a>
+                <a href="video.youtube" class="btn_primary btn__secondary"> Vídeo</a>
+            </div>
+        </div>
+        <script src="main.js"></script>
+
+    </section>
+
+    <!-- ---------------------------------------------Seta Baixo------------------------------------------------ -->
+    <a href="#contact"><i class="fa-solid fa-angle-down fa-beat scroll-down"></i></a>
+
+    <!-- ---------------------------------------------Sobre------------------------------------------------ -->
+    <section class="container about" id="about">
+        <div>
+            <img src="img/sobre mim.png" alt="título sobre mim" class="image_title">
+        </div>
+        <div class="table_about">
+            <div class="col">
+                <img src="img/eu.png" alt="oin" class="image__eu">
+            </div>
+            <div class="text">
+                <p class="text-title"> Fullstack Developer Jr </p>
+                <h3 class="text-body"> Experiência e facilidade no relacionamento com o público.
+                    Organizada, eficaz, com relacionamento interpessoal direcionado para o trabalho em equipe e
+                    orientado para resultados.
+                    Elevado sentido de responsabilidade, confiança e concentração.
+                    Determinada a manter atualizado o conhecimento já adquirido na área de tecnologia (programação,
+                    softwares, hardwares).
+                    Prática com a ferramenta de programação flash, com as linguagens de C, C++, C#, Html 5.
+                    Sempre disposta para aprender e melhorar a capacidade técnica e de atendimento ao cliente interno e
+                    externo.
+                    <div class="table details">
+                        <div class="text-subtitle">Nome: <span class="text-body"> Carolini Simões </div>
+                        <div class="text-subtitle">Nascimento: <span class="text-body"> 27 de fevereiro 95 </div>
+                        <div class="text-subtitle">Formação: <span class="text-body"> Graduação </div>
+                        <div class="text-subtitle">Experiencia: <span class="text-body"> Jr </div>
+                        <div class="text-subtitle">Endereço: <span class="text-body"> Santa Catarina </div>
+                        <div class="text-subtitle">Telefone: <span class="text-body"> (49) 99916-4963 </div>
+                        <div class="text-subtitle">Email: <span class="text-body"> carolinisimoes@outlook.com </div>
+                        <div class="text-subtitle">Freelance: <span class="text-body"> Disponível </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------------------------Seta Cima------------------------------------------------ -->
+    <a href="#face"><i class="fa-solid fa-angle-up fa-beat scroll-up"></i></a>
+
+    <!-- ---------------------------------------------Formação------------------------------------------------ -->
+    <section class="container education" id="education">
+        <div>
+            <img src="img/formação.png" alt="título Formação" class="image_title2 ">
+        </div>
+        <!--  Tabelita ^w^ -->
+        <div class="table align-items-center">
+            <!--  Coluna Graduação (•_•) -->
+            <div class="column">
+                <div class="text-title"> Graduação </div>
+                <div class="border-left border-primary">
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Pós em Segurança da Informação </div>
+                        <p class="text-body"><strong> Uninter </strong> | 2023 - 2024</p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Análise e Desenvolvimento de Sistemas </div>
+                        <p class="text-body"><strong> Uninter </strong> | 2019 - 2023</p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Ciência da Computação </div>
+                        <p class="text-body"><strong> Unicarioca </strong> | 2016 - 2017</p>
+                    </div>
+                </div>
+            </div>
+            <!--  Coluna Cursos (•_•) -->
+            <div class="column">
+                <div class="text-title"> Cursos </div>
+                <div class="border-left border-primary">
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Web Design </div>
+                        <p class="text-body"><strong> Senai </strong> | 2015 - 2015</p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Auxiliar Administrativo </div>
+                        <p class="text-body"><strong> Senac </strong> | 2014 - 2015</p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Manutenção e Reparação de Hardwares e Redes </div>
+                        <p class="text-body"><strong> S.O.S Computadores </strong> | 2013 - 2015</p>
+                    </div>
+                </div>
+            </div>
+            <!--  Coluna Certificações (•_•) -->
+            <div class="column">
+                <div class="text-title"> Certificações </div>
+                <div class="border-left border-primary">
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Formação: OWASP, WordPress, JAVA </div>
+                        <p class="text-body"><strong> Alura </strong> | 2023 - 2023</p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> GFT Java & AWS Developer </div>
+                        <p class="text-body"><strong> Digital Innovation One </strong> | 2021 - 2021</p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Big Data Overview </div>
+                        <p class="text-body"><strong> Unicesumar </strong> | 2021 - 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------------------------Skills-------------------------------------------------- -->
+    <section class="container skills" id="skills">
+        <div>
+            <img src="img/skills.png" alt="título Skills" class="image_title">
+        </div>
+        <!--  Tabelita ^w^ -->
+        <div class="table table__skills">
+            <!--  Coluna Hard (•_•) -->
+            <div class="column">
+                <div class="text-title"> Hard Skills </div>
+                <div class="border-left border-primary">
+                    <div class="table">
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Javascript </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> HTML, CSS </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> WordPress </div>
+                            <p class="text-pink">█████<span>▒▒▒▒▒</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-left border-primary">
+                    <div class="table">
+                        <div class="position-relative">
+                            <div class="text-subtitle"> C, C++, C# </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Python, Django </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Java, PHP </div>
+                            <p class="text-pink">█████<span>▒▒▒▒▒</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-left border-primary">
+                    <div class="table">
+                        <div class="position-relative">
+                            <div class="text-subtitle"> SQL </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> MongoDB </div>
+                            <p class="text-pink">██<span>▒▒▒▒▒▒▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Oracle </div>
+                            <p class="text-pink">██<span>▒▒▒▒▒▒▒▒</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-left border-primary">
+                    <div class="table">
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Photoshop </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Illustrator </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> After Effects </div>
+                            <p class="text-pink">██<span>▒▒▒▒▒▒▒▒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Coluna soft (•_•) -->
+            <div class="column">
+                <div class="text-title"> Soft Skills </div>
+                <div class="border-left border-primary">
+                    <div class="table">
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Autonomia </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Proatividade </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Responsabilidade </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-left border-primary">
+                    <div class="table">
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Perfeccionismo </div>
+                            <p class="text-pink">███████<span>▒▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Resiliência </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Adaptabilidade </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-left border-primary">
+                    <div class="table">
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Aprendizagem </div>
+                            <p class="text-pink">█████████<span>▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Lógica </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Criatividade </div>
+                            <p class="text-pink">█████<span>▒▒▒▒▒</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-left border-primary">
+                    <div class="table">
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Comunicação </div>
+                            <p class="text-pink">█████<span>▒▒▒▒▒</p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Empatia </div>
+                            <p class="text-pink">██████████<span></p>
+                        </div>
+                        <div class="position-relative">
+                            <div class="text-subtitle"> Colaboração </div>
+                            <p class="text-pink">████████<span>▒▒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ---------------------------------------------Experiência------------------------------------------------ -->
+    <section class="container experience" id="experience">
+        <div>
+            <img src="img/experiencia.png" alt="título Experiência" class="image_title2">
+        </div>
+        <!--  Tabelita ^w^ -->
+        <div class="table align-items-center">
+            <!--  Coluna 1 -->
+            <div class="column">
+                <div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Professora de Programação </div>
+                        <p class="text-body"><strong> Senac </strong> | 06.23 - Atual </p>
+                        <p> Ministração e preparação do material didático das aulas
+                            de programação conforme orientação e conteúdo previamente
+                            distribuído. Aplicação de provas, desenvolvimento de trabalhos em aula e
+                            esclarecimento de dúvidas.
+                        </p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Desenvolvedora Full Stack Jr </div>
+                        <p class="text-body"><strong> Raioss </strong> | 02.21 - 08.21 </p>
+                        <p> Desenvolvimento de funcionalidades em Python, DJango,
+                            PHP, HTML, Javascript com Bootstrap e WordPress.
+                            Manutenção e atualização dos servidores de sites e
+                            sistemas de educação e inteligência artificial. Prestação
+                            de suporte ao cliente externo.
+                        </p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Professora de Programação & Robótica </div>
+                        <p class="text-body"><strong> Hey Peppers </strong> | 01.21 - 11.21</p>
+                        <p> Apresentação ao pensamento computacional
+                            básico por meio de atividades do Studio Code.
+                            Desenvolvimento de habilidades lógicas e emocionais através do kit WeDo da Lego
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--  Coluna 2 -->
+            <div class="column">
+                <div class="border-left border-primary">
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Profesora de Inglês </div>
+                        <p class="text-body"><strong> Fisk </strong> | 2019 - 2021</p>
+                        <p> Lecionamento e preparação do material didático das
+                            aulas de inglês, aplicação e preparação de provas
+                            regulares e de proficiência, desenvolvimento de
+                            trabalhos em aula e esclarecendo dúvidas para níveis
+                            iniciantes, intermediários e avançados.
+                        </p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Analista de Suporte Técnico </div>
+                        <p class="text-body"><strong> Freelance </strong> | 2017 - 2019 </p>
+                        <p> Manutenção e reparação de hardwares e softwares de
+                            computadores e impressoras. Limpeza e higienização de
+                            hardwares, impressoras e periféricos. Teste de
+                            componentes para reposição ou reparo de acordo com
+                            a necessidade. Instalação e manutenção de redes.
+                        </p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Desenvolvedora Estagiária </div>
+                        <p class="text-body"><strong> Nucap - Unicarioca </strong> | 03.16 - 09.16</p>
+                        <p> Projetos de criação de jogos em 3d no Unity, focados no
+                            aprendizado de crianças, em conjunto com pedagogos
+                            e designers gráficos. Compatibilidade com Realidade
+                            Virtual e mobile. Desenvolvimento em C, C++ e Javascript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--  Coluna 3 -->
+            <div class="column">
+                <div class="border-left border-primary">
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Auxiliar Administrativo </div>
+                        <p class="text-body"><strong> C.D.I. Barra </strong> | 2014 - 2015</p>
+                        <p> Atendimento aos clientes externos, informando-os,
+                            orientando-os econduzindo-os para o atendimento de
+                            suas necessidades. Anotação de pedidos auxiliando o
+                            cliente interno e externo com suas escolhas.
+                            Administração de documentos.
+                        </p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Atendente </div>
+                        <p class="text-body"><strong> Cinesystem </strong> | 09.14 - 11.15</p>
+                        <p>Atendimento no caixa da bomboniere e na bilheteria,
+                            proporcionando recepção aos clientes informando-os e
+                            orientando-os sobre os assuntos pertinentes ao cinema.
+                            Portaria das salas, orientado os clientes corretamente a
+                            seus lugares. Limpeza e organização do ambiente.
+                        </p>
+                    </div>
+                    <div class="position-relative">
+                        <div class="text-subtitle"> Auxiliar Administrativo </div>
+                        <p class="text-body"><strong> Cinesystem </strong> | 06.14 - 08.15</p>
+                        <p> Atividades Desenvolvidas: Atendimento a clientes internos
+                            e externos informando-os, orientando-os e conduzindo-
+                            os para melhor resolução. Anotar, encaminhar e filtrar ligações.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------Portfólio------------------------------------------------ -->
+    <section class="container portfolio" id="portfolio">
+        <div>
+            <img src="img/portfolio.png" alt="título Portfolio" class="image_title">
+        </div>
+        <!--  Tabelita ^w^ -->
+        <div class="table align-items-center">
+            <!--  Coluna 1 -->
+            <div class="column">
+                <div>
+                    <div class="position-relative">
+                        <a href="https://github.com/CaroliniSimoes"><img src="img/GitHub.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!--  Coluna 2 -->
+            <div class="column">
+                <div>
+                    <div class="position-relative">
+                        <a href="https://github.com/CaroliniSimoes"><img src="img/GitHub.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!--  Coluna 3 -->
+            <div class="column">
+                <div>
+                    <div class="position-relative">
+                        <a href="https://github.com/CaroliniSimoes"><img src="img/GitHub.png"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------Contato------------------------------------------------ -->
+    <section class="container contact" id="contact">
+        <div>
+            <img src="img/contato.png" alt="título Contato" class="image_title">
+        </div>
+        <!--  Tabela Contato -->
+        <div class="table justify-content-center">
+            <form action="#">
+                <div class="table-contact">
+                    <div class="field name" id="name">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="field email" id="email">
+                        <input type="email" placeholder="E-mail" required>
+                    </div>
+                </div>
+                <div class="field subject" id="subject">
+                    <input type="text" placeholder="Assunto" required>
+                </div>
+                <div class="field contnent" id="contnent">
+                    <textarea cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                </div>
+                <div class="btn" id="send">
+                    <button class="btn_primary btn__secondary" type="submit"> Enviar </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------JS Contato------------------------------------------------ -->
+    <script>
+        var send = document.getElementById('send');
+        send.addEventListener('click', function (e) {
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var contnent = document.getElementById('contnent').value;
+            var body = 'name: '+name + '</br> email: ' +email + '</br> subject: '+subject + '</br> contnent: '+contnent;
+
+        Email.send({
+            SecureToken: "e50807bf-6a02-4822-bf4e-398010091759",
+            To: 'carolinisiimoes@gmail.com',
+            From: "carolinisiimoes@gmail.com",
+            Subject: "Mensagem de contato",
+            Body: body
+        }).then(
+            message => alert(message)
+        );
+    </script>
+
+    <!-- ---------------------------------------------Rodapé------------------------------------------------ -->
+    <section class="footer">
+        <!--  Ícones -->
+        <div class="icons">
+            <a class="icon" href="https://twitter.com/SimoesCarolini"><i class="fab fa-twitter"></i></a>
+            <a class="icon" href="https://www.facebook.com/ybandida"><i class="fab fa-facebook-f"></i></a>
+            <a class="icon" href="https://www.linkedin.com/in/carolini-sim%C3%B5es-20213b280/"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a class="icon" href="https://www.instagram.com/cahkward/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!--  Links -->
+        <div class="links">
+            <ul>
+                <li><a href="#">Privacidade</a>
+                    <span class="text-pink">|</span>
+                    <a href="#">Termos</a>
+                    <span class="text-pink">|</span>
+                    <a href="#">FAQs</a>
+                    <span class="text-pink">|</span>
+                    <a href="#">Ajuda</a>
+                </li>
+            </ul>
+            <!--  Marca -->
+            <ul>
+                <li class="text-white">&copy; <a href="#">Carolini Simões</a> <span class="text-pink">|</span> 2023 </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
