@@ -20,6 +20,7 @@
 </head>
 
 <body>
+
     <!-- ---------------------------------------------Menu------------------------------------------------ -->
     <div class="menu">
         <nav>
@@ -35,7 +36,6 @@
             </ul>
         </nav>
     </div>
-
 
 
     <!-- ---------------------------------------------Rosto------------------------------------------------ -->
@@ -57,7 +57,6 @@
                 <a href="video.youtube" class="btn_primary btn__secondary"> Vídeo</a>
             </div>
         </div>
-        <script src="main.js"></script>
 
     </section>
 
@@ -462,23 +461,23 @@
         </div>
         <!--  Tabela Contato -->
         <div class="table justify-content-center">
-            <form action="#">
+            <form>
                 <div class="table-contact">
-                    <div class="field name" id="name">
-                        <input type="text" placeholder="Name" required>
+                    <div class="field name" >
+                        <input type="text" placeholder="Name" id="name" required autocomplete="off">
                     </div>
-                    <div class="field email" id="email">
-                        <input type="email" placeholder="E-mail" required>
+                    <div class="field email" >
+                        <input type="email" placeholder="E-mail" id="email" required autocomplete="off">
                     </div>
                 </div>
-                <div class="field subject" id="subject">
-                    <input type="text" placeholder="Assunto" required>
+                <div class="field subject" >
+                    <input type="text" placeholder="Assunto" id="subject" required autocomplete="off">
                 </div>
-                <div class="field contnent" id="contnent">
-                    <textarea cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                <div class="field contnent">
+                    <textarea cols="30" rows="10" placeholder="Mensagem" id="contnent" required autocomplete="off"></textarea>
                 </div>
-                <div class="btn" id="send">
-                    <button class="btn_primary btn__secondary" type="submit"> Enviar </button>
+                <div class="btn">
+                    <button class="btn_primary btn__secondary" type="submit" id="send"> Enviar </button>
                 </div>
             </form>
         </div>
@@ -487,23 +486,25 @@
     <!-- ---------------------------------------------JS Contato------------------------------------------------ -->
     <script>
         var send = document.getElementById('send');
-        send.addEventListener('click', function (e) {
+        send.addEventListener('click', function(e){
             e.preventDefault()
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var subject = document.getElementById('subject').value;
             var contnent = document.getElementById('contnent').value;
-            var body = 'name: '+name + '</br> email: ' +email + '</br> subject: '+subject + '</br> contnent: '+contnent;
+            var body = 'name: ' + name + '<br> e-mail: ' + email + '<br> subject: ' + subject + '<br> mensagem: ' + contnent;
 
-        Email.send({
+            Email.send({ 
             SecureToken: "e50807bf-6a02-4822-bf4e-398010091759",
             To: 'carolinisiimoes@gmail.com',
-            From: "carolinisiimoes@gmail.com",
+            From: document.getElementById("email").value,
             Subject: "Mensagem de contato",
             Body: body
         }).then(
             message => alert(message)
         );
+    })
+
     </script>
 
     <!-- ---------------------------------------------Rodapé------------------------------------------------ -->
