@@ -395,11 +395,6 @@ textarea {
   margin-right: 30px;
 }
 
-.subject,
-.contnent {
-  position width: 100%;
-}
-
 .field input:hover,
 textarea:hover {
   border: 3px solid var(--pink-light);
